@@ -1,0 +1,18 @@
+a{
+			font-size: 24px;
+			margin-right: 30px;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+		p{
+			/*border-style: solid;
+			border-color: red;
+			border-width: 1px;*/
+			border:2px solid green;
+			border-radius: 5px;
+			margin: 5px;
+			padding: 20px;
+		}
+		div{
+			background-color: #A73F9F;
+		}
