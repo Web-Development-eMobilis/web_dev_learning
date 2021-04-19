@@ -2,6 +2,30 @@
 <html>
 <head>
 	<title>Table</title>
+	<style type="text/css">
+		table{
+			width: 60%;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th,td{
+			padding: 15px;
+		}
+
+		#header{
+			background-color: #D1C173;
+		}
+		.myrow{
+			background-color: #BFBEBC;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		.flag:hover{
+			background-color: red;
+		}
+	</style>
 </head>
 <body>
 
@@ -29,15 +53,15 @@
 				table data  <td>
 				t
 	 	 -->
-	 	 <tr>
+	 	 <tr id="header">
 	 	 	<th></th>
 	 	 	<th>Country</th>
 	 	 	<th>Capital City</th>
 	 	 	<th>Phone Code</th>
 	 	 </tr>
 
-	 	 <tr>
-	 	 	<td>
+	 	 <tr class="myrow">
+	 	 	<td class="flag">
 	 	 		<img src="https://cdn.britannica.com/15/15-004-B5D6BF80/Flag-Kenya.jpg" width="50px">
 	 	 	</td>
 	 	 	<td>Kenya</td>
@@ -46,7 +70,7 @@
 	 	 </tr>
 
 	 	 <tr>
-	 	 	<td>
+	 	 	<td class="flag">
 	 	 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/255px-Flag_of_Uganda.svg.png" width="50px">
 	 	 	</td>
 	 	 	<td>Uganda</td>
@@ -54,8 +78,8 @@
 	 	 	<td>+256</td>
 	 	 </tr>
 
-	 	 <tr>
-	 	 	<td>
+	 	 <tr class="myrow">
+	 	 	<td class="flag">
 	 	 		<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg" width="50px">
 	 	 	</td>
 	 	 	<td>Tanzania</td>
