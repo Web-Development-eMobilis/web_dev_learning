@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Corousels</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<style type="text/css">
+			img{
+				height: 400px;
+				width: 500px;
+			}
+		</style>
+</head>
+<body>
+
+	<div class="container">
+		<!-- navs -->
+		<ul class="nav nav-tabs">
+		  <li class="nav-item">
+		    <a class="nav-link active" aria-current="page" href="#">Active</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item dropdown">
+		    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">My Favourite Animals</a>
+		    <ul class="dropdown-menu">
+		      <li><a class="dropdown-item" href="#">Cats</a></li>
+		      <li><a class="dropdown-item" href="#">Dogs</a></li>
+		      <li><a class="dropdown-item" href="#">Eagles</a></li>
+		      <li><hr class="dropdown-divider"></li>
+		      <li><a class="dropdown-item" href="#">Others</a></li>
+		    </ul>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		  </li>
+		</ul>
+		<!-- end navs -->
+
+		<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#">
+			    	<img src="https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790_1280.jpg" style="width: 50px;height: 50px;" class="img-thumbnail">
+			    Sigma Class</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="#">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">About</a>
+			        </li>
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            Conservation Measures
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Education</a></li>
+			            <li><a class="dropdown-item" href="#">Social Media Awareness</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">More</a></li>
+			          </ul>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			        </li>
+			      </ul>
+			      <!-- <form class="d-flex">
+			        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			        <button class="btn btn-outline-success" type="submit">Search</button>
+			      </form> -->
+			    </div>
+			  </div>
+			</nav>
+		<!-- end navbar -->
+		<h3 style="color: #047556;">Slider</h3>
+		<!-- slider -->
+			<div id="myslider" class="carousel slide" data-bs-ride="carousel" >
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="https://cdn.pixabay.com/photo/2021/04/03/02/38/kingfisher-6146356_1280.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>King Fisher</h5>
+			        <p>Nice Bird.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://cdn.pixabay.com/photo/2020/12/22/12/38/cat-5852139_1280.jpg" class="d-block w-100" alt="...">
+			        <div class="carousel-caption d-none d-md-block">
+			        <h5>Cat</h5>
+			        <p>Cute Cat.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://cdn.pixabay.com/photo/2021/04/05/14/54/meerkats-6153748_1280.jpg" class="d-block w-100" alt="...">
+			        <div class="carousel-caption d-none d-md-block">
+			        <h5>Mangoose</h5>
+			        <p>Family of Mangoose</p>
+			      </div>
+			    </div>
+
+			     <div class="carousel-item">
+			      <img src="https://cdn.pixabay.com/photo/2021/04/20/17/05/adler-6194438_1280.jpg" class="d-block w-100" alt="...">
+			        <div class="carousel-caption d-none d-md-block">
+			        <h5>Eagle</h5>
+			        <p>Eagle Head</p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- controls -->
+			  <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+
+			  <!-- indicators -->
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#myslider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#myslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#myslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#myslider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			  </div>
+			</div>
+
+			<!--  -->
+		<!-- END SLIDER -->
+
+		<!-- Modal -->
+<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		  Special Surprise!
+		</button>
+
+		<div class="card" style="width:80%;">
+			<div class="row">
+
+				<div class="col">
+					<h4>Video </h4>
+					<video width="400px" height="320px" controls>
+						<source src="videos/monkey_vid.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="col">
+					<h4>Youtube Videos</h4>
+					<iframe width="400" height="320" 
+					src="https://www.youtube.com/embed/WV84wKFgAJU" 
+					title="My Video" 
+					frameborder="0"
+					allowfullscreen></iframe>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Sigma Class</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        	<img class="img-fluid" src="https://cdn.pixabay.com/photo/2021/01/15/17/01/green-5919790_1280.jpg">
+		        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		        </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- end of modal -->
+
+	</div>
+
+
+<!-- bootstrap  javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
